@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>视频流</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #videoStream {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <img id="videoStream" src="" alt="视频流">
+    <script>
+        // 从URL参数获取视频ID
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get('videoId') || '1';
+        const streamUrl = `http://localhost:5000/api/videos/${videoId}/stream`;
+        
+        // 设置视频流源
+        document.getElementById('videoStream').src = streamUrl;
+    </script>
+</body>
+</html>

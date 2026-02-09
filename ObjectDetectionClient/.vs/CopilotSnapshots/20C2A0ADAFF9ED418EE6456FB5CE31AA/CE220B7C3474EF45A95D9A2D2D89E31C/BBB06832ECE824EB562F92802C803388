@@ -1,0 +1,104 @@
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using ObjectDetectionClient.Models;
+using ObjectDetectionClient.Services;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+
+namespace ObjectDetectionClient.ViewModels;
+
+public partial class VideosViewModel : BaseViewModel
+{
+    private readonly ApiService _apiService;
+
+    [ObservableProperty]
+    private ObservableCollection<Video> _videos = new();
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(IsVideoSelected))]
+    private Video _selectedVideo;
+
+    public bool IsVideoSelected => SelectedVideo != null;
+
+    public VideosViewModel(ApiService apiService)
+    {
+        _apiService = apiService;
+        Title = "视频列表";
+        LoadVideosCommand.Execute(null);
+    }
+
+    [RelayCommand]
+    private async Task LoadVideos()
+    {
+        try
+        {
+            IsBusy = true;
+            Debug.WriteLine("开始加载视频列表...");
+
+            var videos = await _apiService.GetVideosAsync();
+            Debug.WriteLine($"从API获取到 {videos.Count} 个视频");
+
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                Videos.Clear();
+                foreach (var video in videos)
+                {
+                    Videos.Add(video);
+                    Debug.WriteLine($"添加视频: {video.Filename}, 状态: {video.Status}");
+                }
+
+                Debug.WriteLine($"Videos集合现在有 {Videos.Count} 个视频");
+            });
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"加载视频失败: {ex.Message}");
+            await Application.Current.MainPage.DisplayAlert("错误", $"加载视频失败: {ex.Message}", "确定");
+        }
+        finally
+        {
+            IsBusy = false;
+        }
+    }
+
+    [RelayCommand]
+    private async Task Refresh()
+    {
+        await LoadVideos();
+    }
+
+    [RelayCommand]
+    private async Task ViewVideoDetail()
+    {
+        if (SelectedVideo == null)
+        {
+            await Application.Current.MainPage.DisplayAlert("提示", "请先选择一个视频", "确定");
+            return;
+        }
+
+        try
+        {
+            Debug.WriteLine($"跳转到视频详情页，VideoId: {SelectedVideo.Id}");
+            await Shell.Current.GoToAsync($"//VideoDetailPage?VideoId={SelectedVideo.Id}");
+            SelectedVideo = null; // 清空选择
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"导航失败: {ex.Message}");
+            await Application.Current.MainPage.DisplayAlert("错误", $"导航失败: {ex.Message}", "确定");
+        }
+    }
+
+    [RelayCommand]
+    private async Task GoToUploadPage()
+    {
+        try
+        {
+            await Shell.Current.GoToAsync("//UploadPage");
+        }
+        catch (Exception ex)
+        {
+            await Application.Current.MainPage.DisplayAlert("错误", $"导航失败: {ex.Message}", "确定");
+        }
+    }
+}

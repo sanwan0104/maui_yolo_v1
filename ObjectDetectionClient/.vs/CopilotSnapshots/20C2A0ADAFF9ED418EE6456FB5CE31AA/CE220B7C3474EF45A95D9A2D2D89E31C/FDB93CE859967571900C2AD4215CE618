@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:ObjectDetectionClient.Converters"
+             x:Class="ObjectDetectionClient.Views.VideosPage"
+             Title="视频列表">
+
+    <ContentPage.Resources>
+        <converters:StatusToColorConverter x:Key="StatusToColorConverter" />
+        <converters:EmptyConverter x:Key="EmptyConverter" />
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- 顶部工具栏 -->
+        <StackLayout Grid.Row="0" Padding="10" Spacing="10" BackgroundColor="#F5F5F5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="视频列表"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                <HorizontalStackLayout Grid.Column="1" Spacing="10">
+                    <Button Text="刷新"
+                            Command="{Binding RefreshCommand}"
+                            WidthRequest="80"
+                            BackgroundColor="#4CAF50"
+                            TextColor="White" />
+                    <Button Text="上传"
+                            Command="{Binding GoToUploadPageCommand}"
+                            WidthRequest="80"
+                            BackgroundColor="#2196F3"
+                            TextColor="White" />
+                </HorizontalStackLayout>
+            </Grid>
+        </StackLayout>
+
+        <!-- 视频列表 -->
+        <RefreshView Grid.Row="1"
+                     Command="{Binding RefreshCommand}"
+                     IsRefreshing="{Binding IsBusy}">
+            <CollectionView ItemsSource="{Binding Videos}"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding SelectedVideo}"
+                            SelectionChangedCommand="{Binding ViewVideoDetailCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="#E0E0E0"
+                                StrokeThickness="1"
+                                StrokeShape="RoundRectangle 8"
+                                BackgroundColor="White"
+                                Margin="10,5">
+                            <Grid Padding="15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- 视频信息 -->
+                                <StackLayout Grid.Row="0" Grid.Column="0" Grid.RowSpan="2">
+                                    <Label Text="{Binding Filename}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"
+                                           TextColor="#333333" />
+
+                                    <Label Text="{Binding Status, StringFormat='状态: {0}'}"
+                                           FontSize="14">
+                                        <Label.TextColor>
+                                            <Binding Path="Status" Converter="{StaticResource StatusToColorConverter}" />
+                                        </Label.TextColor>
+                                    </Label>
+                                </StackLayout>
+
+                                <!-- 查看详情按钮 -->
+                                <Button Grid.Row="0" Grid.Column="1"
+                                        Text="详情"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.ViewVideoDetailCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#FF9800"
+                                        TextColor="White"
+                                        WidthRequest="60"
+                                        HeightRequest="30"
+                                        FontSize="12"
+                                        CornerRadius="5" />
+
+                                <!-- ID信息（调试用） -->
+                                <Label Grid.Row="1" Grid.Column="1"
+                                       Text="{Binding Id, StringFormat='ID: {0}'}"
+                                       FontSize="12"
+                                       TextColor="#999999"
+                                       HorizontalOptions="End" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+        <!-- 状态信息 -->
+        <StackLayout Grid.Row="2" Padding="10" BackgroundColor="#F5F5F5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="{Binding Videos.Count, StringFormat='共 {0} 个视频'}"
+                       FontSize="14"
+                       TextColor="#666666" />
+
+                <Label Grid.Column="1"
+                       Text="{Binding SelectedVideo.Filename, StringFormat='选中: {0}'}"
+                       FontSize="12"
+                       TextColor="#2196F3"
+                       IsVisible="{Binding IsVideoSelected}" />
+            </Grid>
+        </StackLayout>
+
+        <!-- 加载指示器 -->
+        <ActivityIndicator Grid.RowSpan="3"
+                           IsRunning="{Binding IsBusy}"
+                           IsVisible="{Binding IsBusy}"
+                           Color="#2196F3"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+
+        <!-- 空状态提示 -->
+        <StackLayout Grid.RowSpan="3"
+                     IsVisible="{Binding Videos.Count, Converter={StaticResource EmptyConverter}}"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Spacing="20">
+            <Label Text="📁"
+                   FontSize="60"
+                   TextColor="#CCCCCC"
+                   HorizontalOptions="Center" />
+            <Label Text="暂无视频数据"
+                   FontSize="16"
+                   TextColor="#999999"
+                   HorizontalOptions="Center" />
+            <Button Text="点击刷新"
+                    Command="{Binding RefreshCommand}"
+                    WidthRequest="100"
+                    HorizontalOptions="Center" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

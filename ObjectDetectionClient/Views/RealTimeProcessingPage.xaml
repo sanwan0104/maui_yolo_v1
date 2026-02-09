@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObjectDetectionClient.Views.RealTimeProcessingPage"
+             Title="实时处理">
+    
+    <VerticalStackLayout Padding="16" Spacing="16">
+        <!-- 视频播放区域 -->
+        <StackLayout>
+            <Label Text="视频播放" FontSize="18" FontAttributes="Bold" />
+            <Frame BorderColor="LightGray" CornerRadius="8" Padding="0" WidthRequest="320" HeightRequest="240">
+                <WebView Source="{Binding VideoStreamUrl}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </Frame>
+        </StackLayout>
+        
+        <!-- 处理状态区域 -->
+        <StackLayout>
+            <Label Text="处理状态" FontSize="18" FontAttributes="Bold" />
+            <Frame BorderColor="LightGray" CornerRadius="8" Padding="12">
+                <VerticalStackLayout Spacing="8">
+                    <HorizontalStackLayout>
+                        <Label Text="状态: " FontAttributes="Bold" />
+                        <Label Text="{Binding ProcessingStatus}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="进度: " FontAttributes="Bold" />
+                        <Label Text="{Binding ProcessingProgress, StringFormat='{0:F1}%'}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="当前帧: " FontAttributes="Bold" />
+                        <Label Text="{Binding CurrentFrame}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="总帧数: " FontAttributes="Bold" />
+                        <Label Text="{Binding TotalFrames}" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="处理速度: " FontAttributes="Bold" />
+                        <Label Text="{Binding ProcessingFps, StringFormat='{0:F1} 帧/秒'}" />
+                    </HorizontalStackLayout>
+                    <ProgressBar Progress="{Binding ProcessingProgress, Converter={StaticResource DoubleToProgressConverter}}" />
+                </VerticalStackLayout>
+            </Frame>
+        </StackLayout>
+        
+        <!-- 检测结果区域 -->
+        <StackLayout>
+            <Label Text="检测结果" FontSize="18" FontAttributes="Bold" />
+            <CollectionView ItemsSource="{Binding DetectionResults}" HeightRequest="200">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="LightGreen" CornerRadius="6" Padding="8" Margin="0,4,0,4">
+                            <HorizontalStackLayout>
+                                <Label Text="{Binding ObjectClass}" FontAttributes="Bold" WidthRequest="100" />
+                                <Label Text="{Binding Confidence, StringFormat='{0:F2}'}" WidthRequest="60" />
+                                <Label Text="{Binding FrameNumber, StringFormat='Frame: {0}'}" />
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        
+        <!-- 操作按钮 -->
+        <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+            <Button Text="下载处理后视频" Command="{Binding DownloadProcessedVideoCommand}" IsEnabled="{Binding IsDownloadEnabled}" />
+            <Button Text="返回" Command="{Binding BackCommand}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

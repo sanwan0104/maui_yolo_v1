@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ObjectDetectionClient.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ObjectDetectionClient.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
+
+    <TabBar>
+        <Tab Title="视频列表" Icon="home.png">
+            <ShellContent 
+                Title="视频列表"
+                ContentTemplate="{DataTemplate views:VideosPage}"
+                Route="VideosPage" />
+        </Tab>
+        <Tab Title="上传" Icon="upload.png">
+            <ShellContent 
+                Title="上传"
+                ContentTemplate="{DataTemplate views:UploadPage}"
+                Route="UploadPage" />
+        </Tab>
+    </TabBar>
+
+    <!-- 视频详情页作为独立路由 -->
+    <ShellContent 
+        Title="视频详情"
+        ContentTemplate="{DataTemplate views:VideoDetailPage}"
+        Route="VideoDetailPage" />
+
+</Shell>
