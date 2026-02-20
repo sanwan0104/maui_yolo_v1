@@ -522,3 +522,4 @@ C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\obj\Debug\net1
 C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\video.scale-200.png
 C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\video.scale-400.png
 C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\videostream.html
+C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\obj\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.sourcelink.json
