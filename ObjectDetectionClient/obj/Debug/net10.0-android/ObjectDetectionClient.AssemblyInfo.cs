@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObjectDetectionClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2aee4eec5f8e502bab574f2d2fdb143f833483db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d9f7a6c53f7bd03b6dd24104086fb1eed19edb99")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObjectDetectionClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObjectDetectionClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
