@@ -31,8 +31,6 @@ public static class MauiProgram
         // 注册转换器
         builder.Services.AddSingleton<StatusToColorConverter>();
         builder.Services.AddSingleton<BboxConverter>();
-        builder.Services.AddSingleton<IntToBoolConverter>();
-        builder.Services.AddSingleton<BoolInverseConverter>();
         builder.Services.AddSingleton<NotNullConverter>();
 
         // 注册ViewModels
