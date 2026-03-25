@@ -128,59 +128,7 @@ def save_detection_results(video_id, results):
 
 
 # ============================================================================
-# 视频处理函数（传统批处理模式）
-# ============================================================================
-
-def process_video(video_path, video_id):
-    """
-    批处理模式：处理整个视频文件
-    特点：每 10 帧检测一次，适合离线处理
-    参数：
-        video_path: 视频文件路径
-        video_id: 视频 ID
-    """
-    try:
-        update_video_status(video_id, 'processing')
-        cap = cv2.VideoCapture(video_path)
-        results_list = []
-        frame_count = 0
-
-        while True:
-            ret, frame = cap.read()
-            if not ret:
-                break
-
-            # 每 10 帧检测一次，提高处理速度
-            if frame_count % 10 == 0:
-                detections = model(frame, verbose=False, device='cpu')[0]
-
-                for box in detections.boxes:
-                    class_id = int(box.cls[0].item())
-                    object_class = model.names[class_id]
-                    confidence = box.conf[0].item()
-                    bbox = box.xyxy[0].tolist()
-
-                    results_list.append({
-                        'frame': frame_count,
-                        'class': object_class,
-                        'confidence': confidence,
-                        'bbox': bbox
-                    })
-
-            frame_count += 1
-
-        cap.release()
-        save_detection_results(video_id, results_list)
-        update_video_status(video_id, 'completed')
-        print(f"视频 {video_id} 处理完成，共处理 {len(results_list)} 个检测结果")
-
-    except Exception as e:
-        print(f"处理视频时出错：{e}")
-        update_video_status(video_id, 'failed')
-
-
-# ============================================================================
-# API 响应辅助函数
+# 实时处理 API（VideoProcessor 类）
 # ============================================================================
 
 def error_response(message):
@@ -236,40 +184,40 @@ def get_video_results(video_id):
 
 
 # ============================================================================
-# 视频上传 API（批处理模式）
+# 视频上传 API（批处理模式 - 已弃用，改用 /api/upload_realtime）
 # ============================================================================
 
-@app.route('/api/upload', methods=['POST'])
-def upload_videos():
-    """
-    上传视频并启动批处理
-    流程：接收文件 → 保存文件 → 记录数据库 → 异步处理
-    """
-    if 'file' not in request.files:
-        return error_response('No file')
-
-    file = request.files['file']
-    if file.filename == '':
-        return error_response('No filename')
-
-    # 保存文件
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-    file.save(filepath)
-
-    # 保存视频信息到数据库
-    video_id = save_videos_info(file.filename, filepath)
-    if not video_id:
-        return error_response('保存视频信息失败')
-
-    # 异步处理视频（不阻塞响应）
-    thread = threading.Thread(target=process_video, args=(filepath, video_id))
-    thread.start()
-
-    return success_response({
-        'video_id': video_id,
-        'filename': file.filename,
-        'message': '视频已上传，正在处理中'
-    })
+# @app.route('/api/upload', methods=['POST'])
+# def upload_videos():
+#     """
+#     上传视频并启动批处理
+#     流程：接收文件 → 保存文件 → 记录数据库 → 异步处理
+#     """
+#     if 'file' not in request.files:
+#         return error_response('No file')
+#
+#     file = request.files['file']
+#     if file.filename == '':
+#         return error_response('No filename')
+#
+#     # 保存文件
+#     filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+#     file.save(filepath)
+#
+#     # 保存视频信息到数据库
+#     video_id = save_videos_info(file.filename, filepath)
+#     if not video_id:
+#         return error_response('保存视频信息失败')
+#
+#     # 异步处理视频（不阻塞响应）
+#     thread = threading.Thread(target=process_video, args=(filepath, video_id))
+#     thread.start()
+#
+#     return success_response({
+#         'video_id': video_id,
+#         'filename': file.filename,
+#         'message': '视频已上传，正在处理中'
+#     })
 
 
 @app.route('/api/videos/<int:video_id>', methods=['GET'])

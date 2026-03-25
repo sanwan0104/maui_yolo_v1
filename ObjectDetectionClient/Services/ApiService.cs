@@ -162,33 +162,34 @@ public class ApiService
         return new List<DetectionResult>();
     }
 
-    public async Task<UploadVideoResponse> UploadVideoAsync(string filePath)
-    {
-        try
-        {
-            Debug.WriteLine($"上传文件: {filePath}");
-            using var form = new MultipartFormDataContent();
-            using var fileStream = System.IO.File.OpenRead(filePath);
-            using var fileContent = new StreamContent(fileStream);
-
-            form.Add(fileContent, "file", System.IO.Path.GetFileName(filePath));
-
-            var response = await _httpClient.PostAsync("/api/upload", form);
-
-            if (response.IsSuccessStatusCode)
-            {
-                var jsonString = await response.Content.ReadAsStringAsync();
-                var apiResponse = JsonConvert.DeserializeObject<ApiResponse<UploadVideoResponse>>(jsonString);
-                return apiResponse?.Data;
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"上传异常: {ex.Message}");
-        }
-
-        return null;
-    }
+    // 弃用：改用 UploadVideoRealtimeAsync 方法（支持实时处理）
+    // public async Task<UploadVideoResponse> UploadVideoAsync(string filePath)
+    // {
+    //     try
+    //     {
+    //         Debug.WriteLine($"上传文件: {filePath}");
+    //         using var form = new MultipartFormDataContent();
+    //         using var fileStream = System.IO.File.OpenRead(filePath);
+    //         using var fileContent = new StreamContent(fileStream);
+    //
+    //         form.Add(fileContent, "file", System.IO.Path.GetFileName(filePath));
+    //
+    //         var response = await _httpClient.PostAsync("/api/upload", form);
+    //
+    //         if (response.IsSuccessStatusCode)
+    //         {
+    //             var jsonString = await response.Content.ReadAsStringAsync();
+    //             var apiResponse = JsonConvert.DeserializeObject<ApiResponse<UploadVideoResponse>>(jsonString);
+    //             return apiResponse?.Data;
+    //         }
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         Debug.WriteLine($"上传异常: {ex.Message}");
+    //     }
+    //
+    //     return null;
+    // }
 
     public async Task<UploadVideoResponse> UploadVideoRealtimeAsync(string filePath, string fileName)
     {
