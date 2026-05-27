@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ObjectDetectionClient</id>
+    <version>1.0.0</version>
+    <authors>ObjectDetectionClient</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net10.0-android36.0">
+        <dependency id="CommunityToolkit.Maui" version="12.3.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-ios26.1">
+        <dependency id="CommunityToolkit.Maui" version="12.3.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-maccatalyst26.1">
+        <dependency id="CommunityToolkit.Maui" version="12.3.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-windows10.0.19041">
+        <dependency id="CommunityToolkit.Maui" version="12.3.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-android\ObjectDetectionClient.runtimeconfig.json" target="lib\net10.0-android36.0\ObjectDetectionClient.runtimeconfig.json" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-android\ObjectDetectionClient.dll" target="lib\net10.0-android36.0\ObjectDetectionClient.dll" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-android\ObjectDetectionClient.xml" target="lib\net10.0-android36.0\ObjectDetectionClient.xml" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-ios\iossimulator-x64\ObjectDetectionClient.runtimeconfig.json" target="lib\net10.0-ios26.1\ObjectDetectionClient.runtimeconfig.json" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-ios\iossimulator-x64\ObjectDetectionClient.dll" target="lib\net10.0-ios26.1\ObjectDetectionClient.dll" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ObjectDetectionClient.runtimeconfig.json" target="lib\net10.0-maccatalyst26.1\ObjectDetectionClient.runtimeconfig.json" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\ObjectDetectionClient.dll" target="lib\net10.0-maccatalyst26.1\ObjectDetectionClient.dll" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.runtimeconfig.json" target="lib\net10.0-windows10.0.19041\ObjectDetectionClient.runtimeconfig.json" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.dll" target="lib\net10.0-windows10.0.19041\ObjectDetectionClient.dll" />
+    <file src="C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\resources.pri" target="lib\net10.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>

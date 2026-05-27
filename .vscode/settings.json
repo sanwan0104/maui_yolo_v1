@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "ObjectDetection_API"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="ObjectDetectionClient" mvid="40ac521d5e974131a719303cd8513665">
+  <java-to-managed>
+    <entry java-name="crc64cd3bab3e2d8fe4c3/MainActivity" managed-name="ObjectDetectionClient.MainActivity, ObjectDetectionClient" managed-type-token-id="33554452" />
+    <entry java-name="crc64cd3bab3e2d8fe4c3/MainApplication" managed-name="ObjectDetectionClient.MainApplication, ObjectDetectionClient" managed-type-token-id="33554453" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64cd3bab3e2d8fe4c3/MainActivity" managed-name="ObjectDetectionClient.MainActivity, ObjectDetectionClient" managed-type-token-id="33554452" />
+    <entry java-name="crc64cd3bab3e2d8fe4c3/MainApplication" managed-name="ObjectDetectionClient.MainApplication, ObjectDetectionClient" managed-type-token-id="33554453" />
+  </managed-to-java>
+</api>

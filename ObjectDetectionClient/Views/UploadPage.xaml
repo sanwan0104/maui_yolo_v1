@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObjectDetectionClient.Views.UploadPage"
+             Title="上传视频">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- 标题栏-->
+        <Grid Grid.Row="0" Padding="10" BackgroundColor="#F5F5F5">
+            <Label Text="上传视频"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        </Grid>
+
+        <!-- 上传区域 -->
+        <Frame Grid.Row="1"
+               Margin="20"
+               Padding="30"
+               CornerRadius="15"
+               BackgroundColor="White"
+               BorderColor="#E0E0E0"
+               VerticalOptions="Center">
+            <StackLayout Spacing="20">
+                <!-- 选择文件区域 -->
+                <Border Stroke="#2196F3"
+                        StrokeThickness="2"
+                        StrokeDashArray="5,5"
+                        StrokeShape="RoundRectangle 10"
+                        HeightRequest="200">
+                    <Grid>
+                        <StackLayout HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     Spacing="10">
+                            <Image Source="video.png"
+                                   HeightRequest="60"
+                                   WidthRequest="60" />
+
+                            <Button Text="选择视频文件"
+                                    Command="{Binding SelectFileCommand}"
+                                    BackgroundColor="#2196F3"
+                                    TextColor="White"
+                                    Padding="20,10"
+                                    FontSize="16"
+                                    CornerRadius="8" />
+
+                            <Label Text="{Binding UploadStatus}"
+                                   FontSize="14"
+                                   TextColor="Gray"
+                                   HorizontalOptions="Center" />
+                        </StackLayout>
+
+                        <!-- 已选择的文件 -->
+                        <Frame IsVisible="{Binding SelectedFile, Converter={x:StaticResource NotNullConverter}}"
+                               Margin="10"
+                               Padding="10"
+                               CornerRadius="8"
+                               BackgroundColor="#E8F5E9"
+                               BorderColor="#4CAF50"
+                               HorizontalOptions="Fill"
+                               VerticalOptions="End">
+                            <StackLayout Spacing="5">
+                                <Label Text="{Binding SelectedFile.FileName}"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       TextColor="#2E7D32" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </Border>
+
+                <!-- 上传按钮 -->
+                <Button Text="上传"
+                        Command="{Binding UploadFileCommand}"
+                        IsEnabled="{Binding SelectedFile, Converter={x:StaticResource NotNullConverter}}"
+                        BackgroundColor="#4CAF50"
+                        TextColor="White"
+                        Padding="20,15"
+                        FontSize="18"
+                        CornerRadius="10"
+                        HorizontalOptions="Fill" />
+
+                <!-- 上传进度 -->
+                <ActivityIndicator IsRunning="{Binding IsUploading}"
+                                   IsVisible="{Binding IsUploading}"
+                                   Color="#4CAF50"
+                                   HorizontalOptions="Center" />
+
+                <!-- 成功消息 -->
+                <Border IsVisible="{Binding ShowSuccessMessage}"
+                        Stroke="#4CAF50"
+                        StrokeThickness="1"
+                        StrokeShape="RoundRectangle 8"
+                        BackgroundColor="#E8F5E9"
+                        Padding="15">
+                    <StackLayout Spacing="5">
+                        <Label Text="✓ 上传成功"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="#2E7D32" />
+                        <Label Text="{Binding SuccessMessage}"
+                               FontSize="14"
+                               TextColor="#2E7D32" />
+                    </StackLayout>
+                </Border>
+
+                <!-- 文件格式提示 -->
+                <StackLayout Spacing="5">
+                    <Label Text="支持的文件格式："
+                           FontSize="12"
+                           TextColor="Gray" />
+                    <Label Text="MP4, AVI, MOV, MKV, WMV"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           TextColor="#2196F3" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
