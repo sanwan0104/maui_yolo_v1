@@ -7,6 +7,7 @@
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\viewmodels\\realtimeprocessingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:viewmodels\\realtimeprocessingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,6 +28,8 @@
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
       "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\converters\\boolconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:converters\\boolconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,6 +38,13 @@
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:converters\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
       "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\models\\detectionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:models\\detectionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +57,13 @@
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:models\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\viewmodels\\realtimeprocessingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:viewmodels\\realtimeprocessingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
       "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\resources\\raw\\videostream.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:resources\\raw\\videostream.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -59,6 +76,13 @@
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\views\\realtimeprocessingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:views\\realtimeprocessingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
       "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:views\\uploadpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -87,6 +111,13 @@
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:views\\videospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\views\\videospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:views\\videospage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
       "AbsoluteMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|c:\\users\\administrator\\desktop\\maui_yolo_v1\\objectdetectionclient\\views\\videodetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CAF2080-6883-4EAD-0482-8079974FC453}|ObjectDetectionClient.csproj|solutionrelative:views\\videodetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -110,6 +141,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -124,6 +156,45 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T23:52:02.878Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UploadPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\UploadPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\UploadPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\UploadPage.xaml.cs",
+              "RelativeToolTip": "Views\\UploadPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T10:47:14.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VideoDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideoDetailPage.xaml",
+              "RelativeDocumentMoniker": "Views\\VideoDetailPage.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideoDetailPage.xaml",
+              "RelativeToolTip": "Views\\VideoDetailPage.xaml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwKYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-29T10:46:52.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "videostream.html",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Resources\\Raw\\videostream.html",
+              "RelativeDocumentMoniker": "Resources\\Raw\\videostream.html",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Resources\\Raw\\videostream.html",
+              "RelativeToolTip": "Resources\\Raw\\videostream.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-21T14:06:59.568Z"
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
             },
             {
               "$type": "Document",
@@ -133,14 +204,22 @@
               "RelativeDocumentMoniker": "Services\\ApiService.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Services\\ApiService.cs",
               "RelativeToolTip": "Services\\ApiService.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAUAAAAAAAAAAADwvxYAAAAKAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwBYAAAAKAAAAAAAAAA==",
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-29T10:45:49.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 22,
+=======
+              "DocumentIndex": 21,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "UploadPage.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\UploadPage.xaml",
               "RelativeDocumentMoniker": "Views\\UploadPage.xaml",
@@ -152,7 +231,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 23,
+=======
+              "DocumentIndex": 22,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "VideosViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ViewModels\\VideosViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\VideosViewModel.cs",
@@ -164,7 +247,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 3,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ViewModels\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BaseViewModel.cs",
@@ -172,12 +259,20 @@
               "RelativeToolTip": "ViewModels\\BaseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-12-29T10:45:58.285Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+=======
+              "WhenOpened": "2025-12-29T10:45:58.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "UploadViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ViewModels\\UploadViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UploadViewModel.cs",
@@ -189,7 +284,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 1,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "BoolConverters.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Converters\\BoolConverters.cs",
               "RelativeDocumentMoniker": "Converters\\BoolConverters.cs",
@@ -197,11 +296,20 @@
               "RelativeToolTip": "Converters\\BoolConverters.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-12-30T05:16:22.968Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+=======
+              "WhenOpened": "2025-12-30T05:16:22.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "DetectionResult.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Models\\DetectionResult.cs",
               "RelativeDocumentMoniker": "Models\\DetectionResult.cs",
@@ -214,6 +322,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "VideosPage.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideosPage.xaml",
               "RelativeDocumentMoniker": "Views\\VideosPage.xaml",
@@ -289,6 +398,8 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+=======
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "Converters.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Converters\\Converters.cs",
               "RelativeDocumentMoniker": "Converters\\Converters.cs",
@@ -296,11 +407,20 @@
               "RelativeToolTip": "Converters\\Converters.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-12-29T10:46:29.976Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+=======
+              "WhenOpened": "2025-12-29T10:46:29.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -312,7 +432,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 10,
+=======
+              "DocumentIndex": 6,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "Video.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Models\\Video.cs",
               "RelativeDocumentMoniker": "Models\\Video.cs",
@@ -324,7 +448,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 13,
+=======
+              "DocumentIndex": 7,
+              "Title": "RealTimeProcessingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ViewModels\\RealTimeProcessingViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RealTimeProcessingViewModel.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ViewModels\\RealTimeProcessingViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RealTimeProcessingViewModel.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T11:26:23.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -336,7 +476,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 12,
+=======
+              "DocumentIndex": 11,
+              "Title": "RealTimeProcessingPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\RealTimeProcessingPage.xaml",
+              "RelativeDocumentMoniker": "Views\\RealTimeProcessingPage.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\RealTimeProcessingPage.xaml",
+              "RelativeToolTip": "Views\\RealTimeProcessingPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-21T11:26:16.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -348,7 +504,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 21,
+=======
+              "DocumentIndex": 20,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "VideoDetailPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideoDetailPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\VideoDetailPage.xaml.cs",
@@ -360,7 +520,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 16,
+=======
+              "DocumentIndex": 14,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -372,7 +536,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 18,
+=======
+              "DocumentIndex": 16,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "VideoDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ViewModels\\VideoDetailViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\VideoDetailViewModel.cs",
@@ -385,6 +553,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
+<<<<<<< HEAD
+=======
+              "Title": "VideosPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideosPage.xaml",
+              "RelativeDocumentMoniker": "Views\\VideosPage.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideosPage.xaml",
+              "RelativeToolTip": "Views\\VideosPage.xaml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwGYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-29T10:46:40.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -396,7 +579,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 20,
+=======
+              "DocumentIndex": 18,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "VideosPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\Views\\VideosPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\VideosPage.xaml.cs",
@@ -408,7 +595,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 24,
+=======
+              "DocumentIndex": 23,
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
               "Title": "ObjectDetectionClient.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\maui_yolo_v1\\ObjectDetectionClient\\ObjectDetectionClient.csproj",
               "RelativeDocumentMoniker": "ObjectDetectionClient.csproj",

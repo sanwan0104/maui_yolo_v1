@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2026/05/27-08:41:12.197 4c04 Reusing MANIFEST C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
 2026/05/27-08:41:12.198 4c04 Recovering log #3
 2026/05/27-08:41:12.201 4c04 Reusing old log C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Session Storage/000003.log 
+=======
+2026/03/25-14:03:01.555 5828 Reusing MANIFEST C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2026/03/25-14:03:01.556 5828 Recovering log #3
+2026/03/25-14:03:01.561 5828 Reusing old log C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Session Storage/000003.log 
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f

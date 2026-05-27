@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2026/05/27-08:34:31.999 2b24 Reusing MANIFEST C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
 2026/05/27-08:34:32.000 2b24 Recovering log #3
 2026/05/27-08:34:32.000 2b24 Reusing old log C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Site Characteristics Database/000003.log 
+=======
+2026/03/20-20:58:43.625 76b0 Reusing MANIFEST C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+2026/03/20-20:58:43.628 76b0 Recovering log #3
+2026/03/20-20:58:43.628 76b0 Reusing old log C:\Users\Administrator\Desktop\maui_yolo_v1\ObjectDetectionClient\bin\Debug\net10.0-windows10.0.19041.0\win-x64\ObjectDetectionClient.exe.WebView2\EBWebView\Default\Site Characteristics Database/000003.log 
+>>>>>>> b6368b93a9e2c73ac1562bce11cdd1cf9dc8a82f
